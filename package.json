@@ -1,0 +1,31 @@
+{
+  "name": "node-vexflow",
+  "version": "0.1.0",
+  "description": "VexFlow on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/panarch/node-vexflow.git"
+  },
+  "keywords": [
+    "VexFlow",
+    "Node.js",
+    "Canvas"
+  ],
+  "author": "Taehoon Moon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panarch/node-vexflow/issues"
+  },
+  "homepage": "https://github.com/panarch/node-vexflow#readme",
+  "dependencies": {
+    "canvas": "^2.3.1",
+    "jsdom": "^13.1.0"
+  },
+  "devDependencies": {
+    "vexflow": "^1.2.87"
+  }
+}
