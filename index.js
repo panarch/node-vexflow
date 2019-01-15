@@ -11,8 +11,14 @@ function createCanvas() {
   return canvas;
 }
 
-function writeImage(canvas, filename) {
+function extractImage(canvas) {
   const image = canvas.toDataURL().split(';base64,').pop();
+
+  return image;
+}
+
+function writeImage(canvas, filename) {
+  const image = extractImage(canvas);
 
   fs.writeFileSync(filename, image, { encoding: 'base64' });
 }
@@ -20,5 +26,6 @@ function writeImage(canvas, filename) {
 module.exports = {
   dom,
   createCanvas,
+  extractImage,
   writeImage,
 };
