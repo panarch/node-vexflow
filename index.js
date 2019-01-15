@@ -11,14 +11,21 @@ function createCanvas() {
   return canvas;
 }
 
+function _getImageData(canvas) {
+  return canvas.toDataURL().split(';base64,').pop();
+}
+
 function extractImage(canvas) {
-  const image = canvas.toDataURL().split(';base64,').pop();
+  const image = Buffer.from(
+    _getImageData(canvas),
+    'base64'
+  );
 
   return image;
 }
 
 function writeImage(canvas, filename) {
-  const image = extractImage(canvas);
+  const image = _getImageData(canvas);
 
   fs.writeFileSync(filename, image, { encoding: 'base64' });
 }
