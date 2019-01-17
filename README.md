@@ -25,3 +25,14 @@ stave.setContext(context).draw();
 
 writeImage(canvas, 'sample.png');
 ```
+
+# Documentation
+### createCanvas() -> JSDOM_Canvas
+creates jsdom canvas, you can use this canvas to VexFlow Renderer.
+
+### writeImage(canvas: JSDOM_Canvas, filename: String) -> null
+creates png image file.
+
+### extractImage(canvas: JSDOM_Canvas) -> Buffer
+returns png image buffer.
+
