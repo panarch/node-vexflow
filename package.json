@@ -26,6 +26,6 @@
     "jsdom": "^13.1.0"
   },
   "devDependencies": {
-    "vexflow": "^1.2.87"
+    "vexflow": "^1.2.88"
   }
 }
