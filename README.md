@@ -8,8 +8,8 @@ npm install node-vexflow
 
 # Usage
 ```
-const Vex = require('vexflow');
 const { createCanvas, writeImage } = require('node-vexflow');
+const Vex = require('vexflow');
 
 const canvas = createCanvas();
 

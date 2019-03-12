@@ -1,5 +1,5 @@
-const Vex = require('vexflow');
 const { createCanvas, writeImage } = require('./index');
+const Vex = require('vexflow');
 
 const canvas = createCanvas();
 
